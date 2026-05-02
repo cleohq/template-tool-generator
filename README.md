@@ -1,2 +1,2 @@
-# template-tool-generator
-Cleo HQ template — tool-generator
+# {{PROJECT_NAME}}-2
+Built with Cleo HQ

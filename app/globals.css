@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global font stack and body styling */
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  background-color: #f8fafc; /* slate-50 */
+  margin: 0;
+  padding: 0;
+}
+
+/* Safe area insets for iOS */
+html {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+/* Base styling for centered card layout */
+.centered-card {
+  max-width: 42rem; /* max-w-2xl */
+  margin: 0 auto;
+  padding: 0 1rem; /* px-4 */
+}
+
+@media (max-width: 640px) {
+  .centered-card {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 640px) {
+  .centered-card {
+    padding: 0 1.5rem; /* px-6 */
+  }
+}
